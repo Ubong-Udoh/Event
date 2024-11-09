@@ -1,0 +1,103 @@
+#header {
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+   background-position: center ; 
+  color: white; 
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align:center ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=text], [type=tel], [type=password], select {
+         width: 50;
+         padding: 12px 20px ;
+         margin: 8px 0;
+         display: inline-block;
+         border: 1px solid #ccc;
+         border-radius:4px;
+         box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #4caf50;
+    color:white;
+    padding: 14px 20x;
+    margin: 8px 0;
+    border: none;
+    border-radius:4px ;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    width: 20%;
+    background-color: #af4c4c;
+    color:white;
+    padding: 14px 20px;
+    margin:8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    margin-inline-start: 135px;
+}
+
+input[type=sumit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset]:hover {
+    background-color:#9b4545 ;
+}
+
+/* The radiobutton */
+.radiobutton {
+ display: inline;
+ position: relative;
+ padding-left: 35px;
+ margin-bottom: 12px;
+ cursor:pointer;
+ font-size: 22px;
+ -webkit-user-select:none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+padding-inline-end: 20px;
+}
+
+/* Hide the browsers default radio button*/
+.radiobutton input {
+    position: absolute;
+    opacity:0;
+    cursor: pointer;
+}
+
+/* create a custom radio button */
+.selected {
+    position:absolute ;
+    top: 0;
+    left:0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius:50%;
+    border: solid 1px #ccc;
+}
+
+/* on mouse-over, add a grey background color */
+.radiobutton:hover input~ .selected{
+    background-color:#ccc ;
+}
+
+/* when the radio button is checked, add a blue background */
+.radiobutton input:checked ~ .selected {
+    background-color:#2196f3 ;
+}
+
+div {  
+    background-color: #279c66;
+    padding: 20px; ;
+} 
+
+ 

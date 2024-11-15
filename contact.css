@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border:1px solid #ccc;
+    border: radius 4px;
+     resize: vertical;
+}
+
+label {
+    padding:12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=sumit] {
+background-color:#04AA6D;
+ color:rgba(255, 255, 255, 0.979);
+padding: 12px 20px;
+border: none;
+border-radius: 4px; 
+cursor: pointer;
+float: right;
+}
+
+input[type=submit] hover{
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #9af32548;
+    padding: 20px;
+    padding-inline: 50px;
+}
+
+.col-25 {
+    float:left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* clear floats after the columns */
+.row::after {
+content: "";
+display: table;
+clear:both;
+}
+
+/* Responsive layout- when the screen is less than 600px wide, make the two columns
+stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[ type=sumit] {
+        width: 100%;
+        margin-top: 0
+}
+}  
+
+.header-text {
+    background-color: #08a89b;
+    text-align: center;
+    color: #ccc;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    margin-bottom: 50px;
+}
+
+.header-text p {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.5rem;
+    /* Adjust font sizes for smaller screens */
+    @media (max-width: 768px) {
+    font-size: 2rem;
+    }
+    /* Adjust font sizes for even smaller screens */
+    @media (max-width: 480px) {
+    font-size: 1rem;
+  }
+}
+
+
+
+.header-text h1 {
+    color: #ccc;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    /* Adjust font size for smaller screens */
+    @media (max-width: 768px) {
+        font-size: 4rem;
+    }
+
+    /* Adjust font size for even smaller screens */
+    @media (max-width: 480px) {
+        font-size: 3rem;
+    }
+}
+
+.navbar {
+    background-color: hsla(253, 98%, 33%, 0.616);
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 2rem;
+    padding-inline-start: 30px;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.feature {
+    color: #565656;
+    font-weight: 400;
+    font-size: 2.8rem !important;
+    text-align: center;
+    padding-top: 20px;
+    padding-block-end: 50px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    border-bottom: solid 2px #08a88d62;
+    display: inline-block;
+    font-weight:normal;
+    padding-bottom: 30px;
+    /* Adjust font size for smaller screens */
+    @media (max-width: 768px) {
+        font-size: 4rem;
+    }
+
+    /* Adjust font size for even smaller screens */
+    @media (max-width: 480px) {
+        font-size: 3rem;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    gap: 20px; /* Gap between columns */
+    padding-inline: 30px;
+    padding-bottom: 50px;
+
+    /* For screens smaller than or equal to 600px */
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr; /* One column per row */
+    }
+  }
+  
+  .grid-item {
+    padding: 20px;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease-in-out; /* Adjust transition duration as needed */
+  }
+  
+  .grid-item:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-green {
+    color: #4da808;
+  }

@@ -1,0 +1,205 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 700;
+  }
+  
+  body {
+      background-image: linear-gradient(#352525, rgb(41, 32, 32), rgba(0, 0, 0, 0.61));
+  }
+  
+  .form-group {
+      margin: 0 auto !important;
+      text-align: center;
+  }
+  
+  input::placeholder {
+      font-size: 1.2rem; /* Adjust the font size as needed */
+    }
+  
+  input [type=email]:focus {
+      border: solid 10px aliceblue;
+    }
+  
+  input[type=email] {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    border-radius: 100px;
+    resize: vertical;
+    background-color: #282727;
+  }
+  
+  input[type=submit] {
+    background-color: #bb0707;
+    color: white;
+    font-size: 1.5rem;
+    padding: 13px 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #8d0a0a;
+  } 
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    input[type=email] {
+      width: 90%;
+      margin-block: 5px;
+      margin-inline: 5px;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+      input[type=submit] {
+        width: 45%;
+        margin-block: 10px;
+        margin-inline: 5px;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-inline: 0;
+      }
+    }
+   /* linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), */
+  .header-text {
+      width: 95%;
+      margin: 0 auto;
+      min-height: 100%;
+      background-image: url(""), linear-gradient(rgba(10, 71, 66, 0.411),rgba(35, 106, 116, 0.678));
+      background-blend-mode: overlay;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: #cccccc77;
+      padding-top: 250px;
+      padding-bottom: 100px;
+      margin-bottom: 20px;
+      border-radius: 30px;
+      border: solid 3px #ccccccaf;
+      border-bottom-right-radius: 200px;
+      border-top-left-radius: 200px;
+      /* Adjust font size for smaller screens */
+      @media (max-width: 768px) {
+          padding-block: 50px;
+          margin-block: 20px;
+          border-bottom-right-radius: 100px;
+          border-top-left-radius: 100px;
+          
+      }
+  }
+  
+  .header-text p {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 30px;
+      font-size: 1.5rem;
+      /* Adjust font sizes for smaller screens */
+      @media (max-width: 768px) {
+      font-size: 2rem;
+      }
+      /* Adjust font sizes for even smaller screens */
+      @media (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+  
+  #sign-in-button {
+      background-color: aliceblue;
+      color: #333333f1;
+      padding: 10px 25px;
+      border-radius: 25px;
+  }
+  
+  #sign-in-button:hover {
+      /* background-color: transparent; */
+      /* color: aliceblue; */
+      border: solid 1px aliceblue;
+      box-shadow: #16ccae;
+      transition: ease-in-out;
+  }
+  
+      @media (max-width: 768px) {
+          font-size: 1.3rem;
+          margin-bottom: 0;
+      }
+  
+  
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* 6 equal-width columns */
+      gap: 20px; /* Gap between columns */
+      padding-bottom: 50px;
+      margin-inline: 10%;
+  
+      /* For screens smaller than or equal to 600px */
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(2, 1fr); /* Two column per row */
+      }
+    }
+  
+  .more-reasons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+      gap: 10px; /* Gap between columns */
+      padding-bottom: 50px;
+      margin-inline: 10%;
+  
+      /* For screens smaller than or equal to 600px */
+      @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr); /* one column per row */
+      }
+    }
+    
+    .grid-item {
+      padding: 0px;
+      border-radius: 25px;
+      overflow: hidden;
+      transition: box-shadow 0.2s ease-in-out; /* Adjust transition duration as needed */
+    }
+    
+    .grid-item:hover img {
+      box-shadow: 0px 5px 10px rgba(10, 46, 87, 0.356);
+      transform: scale(1.08);
+      transition: 0.5s ease-out;
+    }
+  
+    .grid-text {
+      color: aliceblue;
+      background-color: #0a4d505b;
+      border: solid 1px aliceblue;
+      padding: 20px 10px;
+      border-radius: 25px;
+      overflow: hidden;
+      font-weight: 100 !important;
+    }
+  
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  
+    .text-center {
+      text-align: center;
+    }
+  
+    .grid-text .bi {
+      float: right;
+      padding-block-start:15px;
+      font-size: xx-large;
+      background-image: linear-gradient(to right, #6b068a, #d80b0b);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    

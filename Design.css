@@ -1,0 +1,50 @@
+ h5 {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  section {
+    text-align: center;
+  }
+  input {
+    background-color:red;
+    color:white;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+  }
+  main {
+    border-radius: 15px;
+    margin:60px auto ;
+    padding: 20px;
+  } 
+  h2 {
+    text-align: center;
+  }
+  div {
+    color: white;
+  }
+  
+
+
+
+
+
+  
+
+
+  
+ 
+
+  
+    
+  
+    
+  
+  
